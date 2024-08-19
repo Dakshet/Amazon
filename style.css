@@ -598,7 +598,7 @@ ul a:hover {
 }
 
 .foot-panel5 {
-    padding: 30px 14.3vw 0px;
+    padding: 30px 18vw 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1459,6 +1459,6 @@ ul a:hover {
     }
 
     .pages {
-        padding-top: 6vw;
+        padding-top: 6 vw;
     }
 }
