@@ -6,10 +6,10 @@
 }
 
 body {
-    background-color: rgb(245, 129, 129);
+    /* background-color: rgb(255, 65, 65); */
     color: black;
-    min-height: 100%;
-    max-width: 100%;
+    /* min-height: 100%;
+    width: 100%; */
 }
 
 .navbar {
@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
 }
 
 .nav-logo {
@@ -112,7 +113,8 @@ span {
 }
 
 .nav-cart i {
-    font-size: 1.8vw;
+    font-size: 1vw;
+    margin-right: 2px;
 }
 
 .nav-cart {
@@ -130,6 +132,7 @@ span {
     justify-content: space-evenly;
     color: white;
     z-index: 10;
+
 }
 
 .panel-options {
@@ -280,7 +283,7 @@ span {
     content: "";
     position: absolute;
     top: 480px;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -305,6 +308,7 @@ span {
     background-size: cover;
     background-repeat: no-repeat;
     margin-bottom: 10px;
+    max-width: 20vw;
 }
 
 
@@ -332,8 +336,9 @@ span {
 }
 
 .box h2 {
-    margin-bottom: 10px;
+    /* margin-bottom: 0.1vw; */
     margin-left: 10px;
+    font-size: 1.5vw;
 }
 
 .box-content {
@@ -365,6 +370,10 @@ span {
     margin-top: 20px;
 }
 
+
+
+
+/* ------------- Row Box */
 .rowBox {
     background-color: rgb(255, 255, 255);
     height: 330px;
@@ -414,12 +423,14 @@ span {
 }
 
 
+
+/* --------------------------Sign In Box */
 .rowBoxSignin {
     content: "";
     position: absolute;
     /* top: 3530px; */
     top: 3530px;
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     width: 100%;
     display: flex;
     align-items: center;
@@ -462,7 +473,7 @@ span {
 }
 
 
-
+/* ----------------------------Footer Start */
 footer {
     content: "";
     position: absolute;
@@ -471,6 +482,8 @@ footer {
     margin-top: 15px;
 }
 
+
+/* ----------- Footer Panel 1------- */
 .foot-panel1 {
     background-color: #37475a;
     color: white;
@@ -482,6 +495,9 @@ footer {
     cursor: pointer;
 }
 
+
+
+/* ----------- Footer Panel 2------- */
 .foot-panel2 {
     background-color: #222f3d;
     color: white;
@@ -494,9 +510,13 @@ footer {
     margin-top: 35px;
 }
 
+ul p {
+    font-size: 1.1vw;
+}
+
 ul a {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.9vw;
     margin-top: 10px;
     color: #dddddd;
     text-decoration: none;
@@ -506,6 +526,9 @@ ul a:hover {
     text-decoration: underline;
 }
 
+
+
+/* ----------- Footer Panel 3------- */
 .foot-panel3 {
     background-color: #222f3d;
     color: white;
@@ -567,20 +590,15 @@ ul a:hover {
     margin-right: 40px;
 }
 
+
+
+/* ----------- Footer Panel 5------- */
 .footPanel5Outsider {
     background-color: #131A22;
 }
 
 .foot-panel5 {
-    padding: 30px 210px 0px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-
-.footPanelSecondPart {
-    padding: 30px 210px;
+    padding: 30px 14.3vw 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -592,7 +610,7 @@ ul a:hover {
     width: 119px;
     height: 80px;
     /* background-color: rgb(128, 19, 131); */
-    margin: 10px 10px;
+    margin: 10px 0.5vw;
     color: white;
     cursor: pointer;
 }
@@ -623,6 +641,8 @@ ul a:hover {
 }
 
 
+
+/* ----------- Footer Panel 4------- */
 .foot-panel4 {
     color: white;
     height: 100px;
@@ -715,7 +735,7 @@ ul a:hover {
     .shop-section {
         top: 480px;
         width: 100vw;
-        height: 3000px;
+        height: 2900px;
     }
 
     .box {
@@ -725,6 +745,7 @@ ul a:hover {
 
     .box-img {
         height: 22vw;
+        max-width: 21vw;
     }
 
 
@@ -738,9 +759,73 @@ ul a:hover {
         margin: 20px 5px 0px 5px;
     }
 
+
     .box h2 {
-        font-size: 1.8vw;
+        font-size: 1.4vw;
+        margin-bottom: 2px;
     }
+
+
+    /* --------------------------Sign In Box */
+    .rowBoxSignin {
+        top: 3430px;
+        height: 15vw;
+    }
+
+
+
+    /* ----------------------------Footer Start */
+    footer {
+        top: 3640px;
+    }
+
+    /* ----------------------------Footer 2 */
+
+    ul p {
+        font-size: 1.3vw;
+    }
+
+    ul a {
+        font-size: 1vw;
+    }
+
+
+
+    /* ----------- Footer Panel 5------- */
+    .foot-panel5 {
+        padding: 30px 13vw 0px;
+    }
+
+    .footPanel5InnerBox {
+        width: 8vw;
+        height: 6.8vw;
+        margin: 10px 0.9vw;
+    }
+
+    .footPanel5InnerBox h5 {
+        font-size: 1.1vw;
+    }
+
+    .footPanel5InnerBox p {
+        font-size: 0.9vw;
+    }
+
+
+    /* ------------ Footer Panel 5 Inner Part */
+    .footPanelSecondPart {
+        padding: 0px 18vw;
+    }
+
+
+    /* ------------ Footer Panel 4 */
+    .foot-panel4 {
+        font-size: 1.1vw;
+    }
+
+    .pages {
+        padding-top: 30px;
+    }
+
 }
 
 
@@ -825,7 +910,7 @@ ul a:hover {
 
     .hero-msg {
         top: 20vw;
-        height: 34vw;
+        height: 25vw;
         /* background-color: red; */
     }
 
@@ -841,7 +926,7 @@ ul a:hover {
         top: 42vw;
         /* top: 480px; */
         width: 100vw;
-        height: 3000px;
+        height: 500vw;
         display: flex;
         /* align-items: center; */
     }
@@ -849,16 +934,24 @@ ul a:hover {
     .box {
         padding: 10px 0px 5px;
         /* height: 410px; */
-        height: 38vw;
-        width: 31vw;
+        height: 45vw;
+        width: 42vw;
+        margin: 0px 10px;
+        border-radius: 10px;
     }
 
     .box-img {
         height: 22vw;
+        max-width: 27vw;
     }
 
+    .singleImageDiv p {
+        text-align: center;
+    }
+
+
     .boxes {
-        margin: 0.3vw 4px;
+        margin: 5px 12px;
     }
 
 
@@ -869,10 +962,10 @@ ul a:hover {
     }
 
     .boxes-img {
-        height: 10vw;
+        height: 13vw;
         /* width: 12vw; */
-        width: 12.2vw;
-        margin: 1px 1px 0px 1px;
+        width: 15vw;
+        margin: 1px;
     }
 
     .box-content .allBoxes .boxes p {
@@ -882,14 +975,138 @@ ul a:hover {
     .box h2 {
         font-size: 1.8vw;
         margin-left: 4px;
+        text-align: center;
+        margin-bottom: 15px;
     }
 
     .box-content p {
         color: #007185;
-        margin: 1vw 0.5vw 1vw 0.9vw;
+        margin: 1vw 0.5vw 1vw 2vw;
         font-size: 1.2vw;
         display: inline-block;
     }
+
+
+
+    /* ------------- Row Box */
+    .rowBox {
+        background-color: rgb(255, 255, 255);
+        height: 35vw;
+        width: 96.7%;
+        padding: 20px 0px 15px;
+    }
+
+    .rowBox h2 {
+        font-size: 1.8vw;
+    }
+
+    .box-contentRow .imageRowBox img {
+        width: 20vw;
+        height: 20vw;
+        margin: 10px 17px;
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+
+
+    /* --------------------------Sign In Box */
+
+    .rowBoxSignin {
+        top: 547vw;
+    }
+
+
+    /* ----------------------------Footer Start */
+    footer {
+        top: 565vw;
+    }
+
+
+
+    /* ----------------------------Footer 2 */
+    .foot-panel2 {
+        height: 35vw;
+    }
+
+    ul p {
+        font-size: 1.6vw;
+    }
+
+    ul a {
+        font-size: 1.3vw;
+    }
+
+
+
+    /* ----------------------------Footer 3 */
+    .foot-panel3 {
+        height: 13vw;
+    }
+
+    .footPanelBox {
+        height: 3vw;
+        width: 15vw;
+    }
+
+    .foot-panelInner3 .footPanelBox {
+        font-size: 1.4vw;
+    }
+
+    .foot-panelInner3 .footPanelBox img {
+        width: 2vw;
+    }
+
+    .foot-panelInner3 .footPanelBox span {
+        font-size: 1.5vw;
+    }
+
+
+    .logo {
+        width: 90px;
+        padding-bottom: 25px;
+        margin-right: 30px;
+    }
+
+
+
+    /* ----------- Footer Panel 5------- */
+    .foot-panel5 {
+        padding: 30px 14vw 0px;
+    }
+
+    .footPanel5InnerBox {
+        width: 8vw;
+        height: 6.8vw;
+        margin: 10px 0.9vw;
+    }
+
+
+    .footPanel5InnerBox h5 {
+        font-size: 1.2vw;
+    }
+
+    .footPanel5InnerBox p {
+        font-size: 1vw;
+    }
+
+
+
+    /* ------------ Footer Panel 5 Inner Part */
+    .footPanelSecondPart {
+        padding: 0px 18vw;
+    }
+
+
+    /* ------------ Footer Panel 4 */
+    .foot-panel4 {
+        font-size: 1.3vw;
+    }
+
+    .pages {
+        padding-top: 4vw;
+    }
+
+
 }
 
 
@@ -1012,12 +1229,12 @@ ul a:hover {
     /* Hero Section ------------------------------------ */
 
     .hero-section {
-        height: 42vw;
+        height: 45vw;
     }
 
     .hero-msg {
         top: 20vw;
-        height: 24vw;
+        height: 25vw;
         /* background-color: red; */
     }
 
@@ -1035,17 +1252,17 @@ ul a:hover {
     .shop-section {
         margin-top: 20px;
         width: 100vw;
-        height: 3000px;
+        height: 530vw;
         display: flex;
         /* align-items: center; */
     }
 
     .box {
-        padding: 5px 0px 5px;
+        padding: 5px 10px 5px;
         /* height: 410px; */
         /* height: 38vw; */
-        height: 40vw;
-        width: 31vw;
+        height: 44vw;
+        width: 42vw;
     }
 
     .box-content {
@@ -1056,14 +1273,21 @@ ul a:hover {
 
     .box h2 {
         font-size: 1.8vw;
-        margin-bottom: 1vw;
+        margin-bottom: 10px;
         margin-top: 2px;
         margin-left: 0.9vw;
+        /* background-color: red; */
     }
 
     .box-img {
         height: 22vw;
+        max-width: 27vw;
     }
+
+    .singleImageDiv p {
+        text-align: center;
+    }
+
 
     .allBoxes {
         /* padding: 0px 4px; */
@@ -1073,7 +1297,7 @@ ul a:hover {
 
     .boxes {
         margin: 2px 0.8vw;
-        /* height: 13vw; */
+        height: 15vw;
     }
 
     .boxes-img {
@@ -1086,12 +1310,8 @@ ul a:hover {
 
     .box-content .allBoxes .boxes p {
         font-size: 1.3vw;
-        margin: 0px 0px 0px 1px;
+        margin: 10px 0px 0px 0px;
         /* color: red; */
-    }
-
-    .box h2 {
-        font-size: 1.8vw;
     }
 
     .box-content p {
@@ -1099,5 +1319,146 @@ ul a:hover {
         display: inline-block;
         margin: 0px 1vw;
         font-size: 1.2vw;
+    }
+
+
+    /* ------------- Row Box */
+    .rowBox {
+        background-color: rgb(255, 255, 255);
+        height: 40vw;
+        width: 96.7%;
+        padding: 20px 0px 15px;
+    }
+
+    .rowBox h2 {
+        font-size: 1.8vw;
+    }
+
+    .box-contentRow .imageRowBox img {
+        width: 18vw;
+        height: 18vw;
+        margin: 0px 17px;
+        cursor: pointer;
+        padding-bottom: 20px;
+    }
+
+
+
+    /* --------------------------Sign In Box */
+
+    .rowBoxSignin {
+        top: 583vw;
+        height: 23vw;
+    }
+
+    .rowBoxSigninInner p:first-child {
+        font-size: 1.8vw;
+        font-weight: 500;
+    }
+
+    .rowBoxSigninInner p:last-child {
+        font-size: 1.8vw;
+        font-weight: 500;
+    }
+
+    .rowBoxSigninInner button {
+        width: 50%;
+        margin: 8px 0px;
+        padding: 5px;
+        font-size: 1.8vw;
+    }
+
+
+    /* ----------------------------Footer Start */
+    footer {
+        top: 610vw;
+    }
+
+    .foot-panel1 {
+        font-size: 2vw;
+    }
+
+
+    /* ----------------------------Footer 2 */
+
+
+    .foot-panel2 {
+        height: 50vw;
+    }
+
+    ul p {
+        font-size: 1.8vw;
+    }
+
+    ul a {
+        font-size: 1.5vw;
+    }
+
+
+
+    /* ----------------------------Footer 3 */
+    .foot-panel3 {
+        height: 14vw;
+    }
+
+    .footPanelBox {
+        height: 3vw;
+        width: 15vw;
+    }
+
+    .foot-panelInner3 .footPanelBox {
+        font-size: 1.4vw;
+    }
+
+    .foot-panelInner3 .footPanelBox img {
+        width: 2vw;
+    }
+
+    .foot-panelInner3 .footPanelBox span {
+        font-size: 1.5vw;
+    }
+
+    .logo {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+
+    /* ----------- Footer Panel 5------- */
+    .foot-panel5 {
+        padding: 30px 12vw 0px;
+    }
+
+    .footPanel5InnerBox {
+        width: 8vw;
+        height: 6.8vw;
+        margin: 10px 0.9vw;
+    }
+
+
+    .footPanel5InnerBox h5 {
+        font-size: 1.3vw;
+    }
+
+    .footPanel5InnerBox p {
+        font-size: 1.1vw;
+    }
+
+
+
+    /* ------------ Footer Panel 5 Inner Part */
+    .footPanelSecondPart {
+        padding: 0px 18vw;
+    }
+
+
+    /* ------------ Footer Panel 4 */
+    .foot-panel4 {
+        font-size: 1.3vw;
+        height: 70px;
+    }
+
+    .pages {
+        padding-top: 6vw;
     }
 }
