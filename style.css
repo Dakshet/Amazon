@@ -27,7 +27,7 @@ body {
     width: 100px;
 }
 
-.logo {
+.logox {
     background-image: url("amazon_logo.png");
     background-size: cover;
     height: 50px;
@@ -361,7 +361,7 @@ span {
 }
 
 .box-content .redColorImage {
-    width: 310px;
+    width: 330px;
     margin: auto;
 }
 
@@ -668,6 +668,10 @@ ul a:hover {
     padding-top: 5px;
 }
 
+.mobileViewDisplay {
+    display: none;
+}
+
 
 
 /* ------------------ 1300px  */
@@ -744,7 +748,7 @@ ul a:hover {
     }
 
     .box-img {
-        height: 22vw;
+        height: 23vw;
         max-width: 21vw;
     }
 
@@ -941,8 +945,8 @@ ul a:hover {
     }
 
     .box-img {
-        height: 22vw;
-        max-width: 27vw;
+        height: 25vw;
+        max-width: 33vw;
     }
 
     .singleImageDiv p {
@@ -1114,50 +1118,55 @@ ul a:hover {
 @media (max-width:650px) {
 
     .navbar {
-        height: 30px;
-    }
-
-    .border {
-        height: 25px;
+        height: 80px;
+        position: relative;
+        padding: 0px 5px;
     }
 
     .nav-logo {
-        height: 25px;
-        width: 50px;
+        min-height: 50px;
+        width: 100px;
+        /* background-color: rebeccapurple; */
     }
 
-    .logo {
-        height: 25px;
-        width: 100%;
+    .logox {
+        background-image: url("amazon_logo.png");
+        background-size: cover;
+        background-position: center;
+        height: 50px;
+        width: 70px;
+    }
+
+    .border:hover {
+        border: 1.5px solid transparent;
     }
 
     .add-first {
-        /* font-size: 1.3vw; */
         font-size: 1.4vw;
         margin-left: 9px;
     }
 
     .add-second {
         font-size: 1.8vw;
-        /* font-size: 1.6vw; */
     }
 
     .add-icon i {
         font-size: 8px;
-        /* font-size: 8px; */
     }
 
     .nav-search {
-        width: 40vw;
-        /* width: 40vw; */
-        height: 19px;
+        width: 80vw;
+        height: 40px;
         position: relative;
     }
 
+    .search-select {
+        width: 60px;
+        padding: 10px;
+    }
+
     .nav-search select {
-        /* font-size: 1.4vw; */
-        font-size: 1.4vw;
-        /* font-size: 1.4vw; */
+        font-size: 15px;
         appearance: none;
     }
 
@@ -1165,63 +1174,90 @@ ul a:hover {
         content: "";
         position: absolute;
         z-index: 1;
-        width: 3px;
-        height: 3px;
+        width: 5px;
+        height: 5px;
         border-right: 1px solid rgb(0, 0, 0);
         border-bottom: 1px solid rgb(0, 0, 0);
-        left: 26px;
-        top: 76%;
+        left: 41px;
+        top: 60%;
         transform: rotate(45deg);
         margin-top: -8px;
         cursor: pointer;
     }
 
     .search-input {
-        /* font-size: 1.3vw; */
-        font-size: 1.3vw;
+        font-size: 12px;
+        padding-left: 7px;
     }
 
     .search-icon {
-        width: 25px;
-        /* font-size: 1.5vw; */
-        font-size: 7px;
+        width: 40px;
+        font-size: 13px;
     }
 
-    span {
-        font-size: 1.3vw;
-        /* font-size: 1.4vw; */
-        display: inline-block;
-    }
-
-    .nav-second {
-        font-size: 1.7vw;
-        padding-bottom: 10px;
-        /* font-size: 1.8vw; */
-    }
-
-    .nav-cart i {
-        font-size: 1.3vw;
-        /* margin-right: 3px; */
-        margin-right: 3px;
-    }
-
-    .nav-cart {
-        font-size: 1.3vw;
-    }
 
     /* Panel ------------------ */
 
     .panel {
-        font-size: 1.4vw;
-        height: 30px;
+        font-size: 2.7vw;
+        height: 40px;
+        padding: 0px 2px;
+    }
+
+    .panel-all i {
+        margin-right: 5px;
     }
 
     .panel-options {
-        font-size: 1.4vw;
+        font-size: 1.9vw;
     }
 
     .panel-deals {
-        font-size: 1.4vw;
+        font-size: 1.9vw;
+    }
+
+
+    /* Mobile View ------------------------ */
+    .mobileView {
+        display: none;
+    }
+
+    .mobileViewDisplay {
+        content: "";
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100vw;
+        height: 10vw;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        z-index: 100;
+        display: block;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .mobileViewDisplay ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2vw 15%;
+    }
+
+    .mobileViewDisplay ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mobileViewDisplay ul li p {
+        font-size: 3vw;
+    }
+
+    .mobileViewDisplay ul li i {
+        margin-bottom: 2px;
+        font-size: 2.7vw;
     }
 
 
@@ -1233,8 +1269,8 @@ ul a:hover {
     }
 
     .hero-msg {
-        top: 20vw;
-        height: 25vw;
+        top: 22vw;
+        height: 20vw;
         /* background-color: red; */
     }
 
@@ -1250,93 +1286,85 @@ ul a:hover {
 
 
     .shop-section {
-        margin-top: 20px;
+        margin-top: 10vw;
         width: 100vw;
-        height: 530vw;
-        display: flex;
-        /* align-items: center; */
+        height: 2010vw;
+        display: block;
+        padding: 20px 1%;
     }
 
     .box {
-        padding: 5px 10px 5px;
-        /* height: 410px; */
-        /* height: 38vw; */
-        height: 44vw;
-        width: 42vw;
-    }
-
-    .box-content {
-        margin-left: 2px;
-        margin-right: 2px;
-        padding-bottom: -0px;
+        padding: 20px 10px 5px;
+        height: 104vw;
+        width: 93vw;
+        margin-bottom: 30px;
     }
 
     .box h2 {
-        font-size: 1.8vw;
-        margin-bottom: 10px;
+        font-size: 4vw;
+        margin-bottom: 30px;
         margin-top: 2px;
         margin-left: 0.9vw;
-        /* background-color: red; */
+        /* float: left; */
     }
 
     .box-img {
-        height: 22vw;
-        max-width: 27vw;
+        height: 70vw;
+        max-width: 80vw;
     }
 
-    .singleImageDiv p {
-        text-align: center;
+    .box-content .redColorImage {
+        width: 500px;
+        margin: auto;
     }
-
 
     .allBoxes {
-        /* padding: 0px 4px; */
-        /* padding: 0px 0.1vw; */
-        padding: 0px 1px;
+        padding: 0px;
     }
 
     .boxes {
         margin: 2px 0.8vw;
-        height: 15vw;
+        height: 35vw;
     }
 
     .boxes-img {
-        height: 10vw;
-        /* width: 12vw; */
-        width: 12.2vw;
+        height: 25vw;
+        width: 36vw;
         margin: 1px 1px 0px 1px;
-        margin-bottom: -7px;
+        margin-bottom: 10px;
     }
 
     .box-content .allBoxes .boxes p {
-        font-size: 1.3vw;
-        margin: 10px 0px 0px 0px;
-        /* color: red; */
+        font-size: 2.5vw;
+        /* margin-left: 5vw; */
     }
 
-    .box-content p {
-        color: #007185;
-        display: inline-block;
-        margin: 0px 1vw;
-        font-size: 1.2vw;
+    .box-content .hover-cursor {
+        margin-left: 3vw;
+        margin-top: 20px;
+        font-size: 3vw;
     }
 
 
     /* ------------- Row Box */
     .rowBox {
         background-color: rgb(255, 255, 255);
-        height: 40vw;
-        width: 96.7%;
+        height: 60vw;
+        width: 93vw;
         padding: 20px 0px 15px;
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-bottom: 30px;
     }
 
     .rowBox h2 {
-        font-size: 1.8vw;
+        font-size: 4vw;
+        margin-bottom: 30px;
     }
 
     .box-contentRow .imageRowBox img {
-        width: 18vw;
-        height: 18vw;
+        width: 25vw;
+        height: 35vw;
         margin: 0px 17px;
         cursor: pointer;
         padding-bottom: 20px;
@@ -1347,8 +1375,10 @@ ul a:hover {
     /* --------------------------Sign In Box */
 
     .rowBoxSignin {
-        top: 583vw;
-        height: 23vw;
+        top: 2060vw;
+        /* top: 2100vw; */
+        height: 30vw;
+        /* padding-bottom: 20px; */
     }
 
     .rowBoxSigninInner p:first-child {
@@ -1371,7 +1401,7 @@ ul a:hover {
 
     /* ----------------------------Footer Start */
     footer {
-        top: 610vw;
+        top: 2000vw;
     }
 
     .foot-panel1 {
@@ -1459,6 +1489,10 @@ ul a:hover {
     }
 
     .pages {
-        padding-top: 6 vw;
+        padding-top: 6vw;
+    }
+
+    .copyright {
+        padding-bottom: 60px;
     }
 }
