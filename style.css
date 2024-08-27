@@ -297,6 +297,7 @@ span {
     justify-content: space-evenly;
     /* background-color: #e2e7e8; */
     background: linear-gradient(rgba(226, 231, 232, 0.5), rgba(226, 231, 232, 1));
+    /* background-color: red; */
     height: 3000px;
 }
 
@@ -1223,7 +1224,10 @@ ul a:hover {
     .panel-options {
         font-size: 11px;
         width: auto;
-        /* background-color: red; */
+    }
+
+    .panel-options a {
+        display: inline-block;
     }
 
     .panel-deals {
@@ -1284,7 +1288,8 @@ ul a:hover {
     /* Hero Section ------------------------------------ */
 
     .hero-section {
-        height: 45vw;
+        height: 40vw;
+        /* height: 140px; */
     }
 
     .hero-msg {
@@ -1305,12 +1310,14 @@ ul a:hover {
 
 
     .shop-section {
-        margin-top: 10vw;
+        display: relative;
+        margin-top: 23vw;
         width: 100vw;
         height: 2010vw;
-        display: block;
-        padding: 20px 1%;
+        padding: 0px 1%;
     }
+
+    /* BOx------------------------------------ */
 
     .box {
         padding: 20px 10px 5px;
