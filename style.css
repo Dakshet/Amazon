@@ -1314,7 +1314,7 @@ ul a:hover {
         position: absolute;
         margin-top: 100px;
         max-width: 100%;
-        height: 1920vw;
+        height: 1855vw;
         background-color: rgb(202, 200, 200);
         /* display: flex; */
     }
@@ -1387,26 +1387,36 @@ ul a:hover {
     }
 
     .lastBox {
-        /* padding-bottom: 100px;
-        background-color: red; */
         height: 109vw;
     }
+
+    .singlePicBox {
+        height: 92vw;
+    }
+
+    .box-content .singleImageDiv {
+        margin: 10px 0px 0px;
+    }
+
+    .box-content .colorPara {
+        margin-top: 15px;
+    }
+
 
 
     /* ------------- Row Box */
     .rowBox {
         background-color: rgb(255, 255, 255);
-        height: 60vw;
-        width: 93vw;
-        padding: 20px 0px 15px;
-        border-radius: 10px;
-        margin-left: 10px;
-        margin-bottom: 30px;
+        height: 52vw;
+        width: 100vw;
+        padding: 10px 0px 10px;
+        border-radius: 0px;
+        margin-left: 0px;
     }
 
     .rowBox h2 {
         font-size: 4vw;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .box-contentRow .imageRowBox img {
