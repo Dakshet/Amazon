@@ -941,7 +941,7 @@ ul a:hover {
         top: 42vw;
         /* top: 480px; */
         width: 100vw;
-        height: 500vw;
+        height: 550vw;
         display: flex;
         /* align-items: center; */
     }
@@ -949,7 +949,8 @@ ul a:hover {
     .box {
         padding: 10px 0px 5px;
         /* height: 410px; */
-        height: 45vw;
+        height: 50vw;
+        /* max-he: 500px; */
         width: 42vw;
         margin: 0px 10px;
         border-radius: 10px;
@@ -1295,7 +1296,7 @@ ul a:hover {
     .hero-msg {
         top: 22vw;
         height: 20vw;
-        /* background-color: red; */
+        /* background-color: red;/ */
     }
 
     .hero-msg-inner {
@@ -1310,28 +1311,31 @@ ul a:hover {
 
 
     .shop-section {
-        display: relative;
-        margin-top: 23vw;
-        width: 100vw;
+        position: absolute;
+        margin-top: 100px;
+        max-width: 100%;
         height: 2010vw;
-        padding: 0px 1%;
+        background-color: rgb(222, 222, 222);
+        display: flex;
     }
 
     /* BOx------------------------------------ */
 
     .box {
-        padding: 20px 10px 5px;
-        height: 104vw;
-        width: 93vw;
-        margin-bottom: 30px;
+        padding: 5px 10px 5px;
+        height: 103vw;
+        margin-bottom: 10px;
+        background-color: rgb(255, 255, 255);
+        flex-basis: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .box h2 {
         font-size: 4vw;
-        margin-bottom: 30px;
-        margin-top: 2px;
-        margin-left: 0.9vw;
-        /* float: left; */
+        margin: 5px 0px;
+        text-align: left;
     }
 
     .box-img {
@@ -1348,26 +1352,37 @@ ul a:hover {
         padding: 0px;
     }
 
+    .background-img {
+        background-color: rgb(238, 237, 237);
+        padding: 4.7vw;
+        margin-bottom: -6px;
+    }
+
     .boxes {
-        margin: 2px 0.8vw;
-        height: 35vw;
+        margin: 4px 0px;
+        height: 40vw;
     }
 
     .boxes-img {
         height: 25vw;
         width: 36vw;
-        margin: 1px 1px 0px 1px;
-        margin-bottom: 10px;
+        /* margin: 1px 1px 0px 1px;
+        margin-bottom: 10px; */
+    }
+
+    .box-content {
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .box-content .allBoxes .boxes p {
         font-size: 2.5vw;
-        /* margin-left: 5vw; */
+        margin-left: 5px;
     }
 
     .box-content .hover-cursor {
-        margin-left: 3vw;
-        margin-top: 20px;
+        margin-left: 0px;
+        margin-top: 1vw;
         font-size: 3vw;
     }
 
