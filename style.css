@@ -1222,7 +1222,7 @@ ul a:hover {
 
     .panel-options {
         font-size: 11px;
-        width: 400px;
+        width: auto;
         /* background-color: red; */
     }
 
